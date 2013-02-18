@@ -152,4 +152,3 @@ function wstxSubmitForm(submitBtn) {
     return false;
   }
 }
-
