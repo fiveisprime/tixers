@@ -45,7 +45,6 @@ jQuery(document).ready(function ($) {
 });
 
 var validateForm = function() {
-  // Very simple email validation: string@string.string
   var emailTest = /\S+@\S+\.\S+/
     , email     = $('#email').val()
     , name      = $('#name').val()
