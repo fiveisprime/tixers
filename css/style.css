@@ -47,7 +47,7 @@ a:visited {
   background-color: #ffffff;
   z-index: 100;
 }
-#logo {
+.logo {
   text-align: center;
   margin: 10px 0;
 }
@@ -72,7 +72,7 @@ nav[role=navigation] {
 .navigation .active {
   cursor: pointer;
   color: #f68f67;
-  font-weight:bold;
+  font-weight: bold;
 }
 
 /* Buttons */
