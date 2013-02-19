@@ -49,11 +49,24 @@ var validateForm = function() {
   var emailTest = /\S+@\S+\.\S+/
     , email     = $('#email').val()
     , name      = $('#name').val()
-    , result    = false;
+    , $errors   = $('.errors')
+    , err       = [];
 
-  if (emailTest.test(email) && name.length > 0) {
-    result = true;
+  $errors.hide().empty();
+
+  if (!emailTest.test(email)) {
+    err.push($('<li>', { text: 'Please give us a valid email address' }));
   }
 
-  return result;
+  if (name.length === 0) {
+    err.push($('<li>', { text: 'Please give us your name' }));
+  }
+
+  for (var i = err.length - 1; i >= 0; i--){
+    $errors.append(err[i]);
+  }
+
+  $errors.fadeIn();
+
+  return err.length === 0;
 };

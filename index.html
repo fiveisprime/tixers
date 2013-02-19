@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -26,7 +26,7 @@
 <div class="menu">
   <div class="container clearfix">
 
-    <div id="logo" class="grid_3">
+    <div id="logo" class="grid_3 alpha">
       <a href="/"><img src="images/logo.png"></a>
     </div>
 
@@ -105,35 +105,36 @@
       <h1>Signup</h1>
       <h2>Tixers will be launching soon</h2>
       <p>Signup to be one of the first to know when Tixers goes live.</p>
+      <ul class="errors" style="display:none;"></ul>
     </div>
 
     <form id="contact" action="submit.php" method="post">
 
-      <div class="grid_2">
+      <div class="grid_2 alpha">
         <label for="Name">First Name *</label>
       </div>
-      <div class="grid_9">
+      <div class="grid_10 omega">
         <input name="Name" id="name">
       </div>
 
-      <div class="grid_2">
+      <div class="grid_2 alpha">
         <label for="Email">Email *</label>
       </div>
-      <div class="grid_9">
+      <div class="grid_10 omega">
         <input name="Email" id="email">
       </div>
 
-      <div class="grid_2">
+      <div class="grid_2 alpha">
         <label for="City">City</label>
       </div>
-      <div class="grid_9">
+      <div class="grid_10 omega">
         <input name="City" id="city">
       </div>
 
-      <div class="grid_2">
+      <div class="grid_2 alpha">
         <label for="State">State</label>
       </div>
-      <div class="grid_9">
+      <div class="grid_10 omega">
         <select labelid="formLabel_State" name="State" id="formElement_State">
           <option value="AL" selected="selected">AL</option>
           <option value="AK">AK</option>
@@ -189,10 +190,10 @@
         </select>
       </div>
 
-      <div class="grid_1">
+      <div class="grid_1 alpha">
         <input class="btn" type="submit" onclick="return validateForm();" value="Submit">
       </div>
-      <div class="grid_11"></div>
+      <div class="grid_11 omega"></div>
     </form>
 
     <footer class="grid_12">

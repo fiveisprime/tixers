@@ -98,21 +98,16 @@ nav[role=navigation] {
   top: 1px;
 }
 
-/* Signup form */
+/* Form errors */
 
-#wstForm_Contact {
-  background-color: transparent;
+.errors {
+  margin: 0;
+  padding: 0 0 5px 0;
 }
-
-.specialEmailField {
-  display: none;
-  visibility: hidden;
-  height: 0px;
-}
-.emailDisplay {
-  display: none;
-  visibility: hidden;
-  height: 0px;
+.errors li {
+  color: #c10204;
+  list-style: none;
+  font-weight: bold;
 }
 
 /* General Slides */
