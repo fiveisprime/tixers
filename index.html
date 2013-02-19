@@ -106,122 +106,98 @@
     <div class="content grid_12">
       <h1>Signup</h1>
       <h2>Tixers will be launching soon</h2>
-      <p>Signup to be the first to know when Tixers goes live!</p>
-      <div style="display:block;overflow:hidden;">
-        <form labelid="formLabel_ContactForm" method="post" action="https://sitesupport.websitetonight.com/formmailer.aspx?projectid=3025145&amp;websiteid=30168025&amp;emailid=" name="Contact Form" id="wstForm_Contact">
-          <table width="100%" cellspacing="1" cellpadding="5" class="contactFormTable">
-              <tbody>
-                  <tr>
-                      <td align="center" style="text-decoration: none; font-weight: normal;">
-                      <table width="100%" cellspacing="1" cellpadding="3" border="0" class="contactFormTable">
-                          <tbody>
-                              <tr>
-                                  <td>
-                                    <span controlid="formElement_First" id="formLabel_First">First Name:</span>
-                                  </td>
-                                  <td>
-                                    <input labelid="formLabel_First" name="First Name" id="formElement_First">
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td><span controlid="formElement_City" id="formLabel_City">City:</span></td>
-                                  <td><input labelid="formLabel_City" name="City" id="formElement_City"></td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                    <span controlid="formElement_State" id="formLabel_State">State:</span>
-                                  </td>
-                                  <td>
-                                  <select labelid="formLabel_State" name="State" id="formElement_State">
-                                  <option value="AL" selected="selected">AL</option>
-                                  <option value="AK">AK</option>
-                                  <option value="AZ">AZ</option>
-                                  <option value="AR">AR</option>
-                                  <option value="CA">CA</option>
-                                  <option value="CO">CO</option>
-                                  <option value="CT">CT</option>
-                                  <option value="DE">DE</option>
-                                  <option value="DC">DC</option>
-                                  <option value="FL">FL</option>
-                                  <option value="GA">GA</option>
-                                  <option value="HI">HI</option>
-                                  <option value="ID">ID</option>
-                                  <option value="IL">IL</option>
-                                  <option value="IN">IN</option>
-                                  <option value="IA">IA</option>
-                                  <option value="KS">KS</option>
-                                  <option value="KY">KY</option>
-                                  <option value="LA">LA</option>
-                                  <option value="ME">ME</option>
-                                  <option value="MD">MD</option>
-                                  <option value="MA">MA</option>
-                                  <option value="MI">MI</option>
-                                  <option value="MN">MN</option>
-                                  <option value="MS">MS</option>
-                                  <option value="MO">MO</option>
-                                  <option value="MT">MT</option>
-                                  <option value="NE">NE</option>
-                                  <option value="NV">NV</option>
-                                  <option value="NH">NH</option>
-                                  <option value="NJ">NJ</option>
-                                  <option value="NM">NM</option>
-                                  <option value="NY">NY</option>
-                                  <option value="NC">NC</option>
-                                  <option value="ND">ND</option>
-                                  <option value="OH">OH</option>
-                                  <option value="OK">OK</option>
-                                  <option value="OR">OR</option>
-                                  <option value="PA">PA</option>
-                                  <option value="RI">RI</option>
-                                  <option value="SC">SC</option>
-                                  <option value="SD">SD</option>
-                                  <option value="TN">TN</option>
-                                  <option value="TX">TX</option>
-                                  <option value="UT">UT</option>
-                                  <option value="VT">VT</option>
-                                  <option value="VA">VA</option>
-                                  <option value="WA">WA</option>
-                                  <option value="WV">WV</option>
-                                  <option value="WI">WI</option>
-                                  <option value="WY">WY</option>
-                                  </select>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                    <span controlid="formElement_liamE" id="formLabel_liamE">Email:</span>
-                                  </td>
-                                  <td>
-                                    <input labelid="formLabel_liamE" name="liamE" id="formElement_liamE">
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                    <span controlid="formElement_Comments" id="formLabel_Comments">Comments:</span>
-                                  </td>
-                                  <td>
-                                    <textarea labelid="formLabel_Comments" cols="38" rows="4" name="Comments" id="formElement_Comments"></textarea>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                      <div contenteditable="false" class="specialEmailField" id="specialField">
-                        <input type="text" tabindex="-1" name="email" id="email" class="emailDisplay">
-                      </div>
-                      <p>
-                        <input class="btn" type="submit" onclick="return wstxSubmitForm(this);" value="Submit" id="wstForm_Contact_Submit">
-                      </p>
-                      </td>
-                  </tr>
-              </tbody>
-          </table>
-          <input type="hidden" value="Contact Form." name="FormMailerSubject" id="FormMailerSubject">
-          <input type="hidden" value="http://tixers.com" name="FormMailerRedirect" id="FormMailerRedirect">
-        </form>
-      </div>
+      <p>Signup to be one of the first to know when Tixers goes live.</p>
     </div>
 
-    <footer>
+    <form id="contact" action="submit.php" method="post">
+
+      <div class="grid_2">
+        <label for="Name">First Name *</label>
+      </div>
+      <div class="grid_9">
+        <input name="Name" id="name">
+      </div>
+
+      <div class="grid_2">
+        <label for="Email">Email *</label>
+      </div>
+      <div class="grid_9">
+        <input name="Email" id="email">
+      </div>
+
+      <div class="grid_2">
+        <label for="City">City</label>
+      </div>
+      <div class="grid_9">
+        <input name="City" id="city">
+      </div>
+
+      <div class="grid_2">
+        <label for="State">State</label>
+      </div>
+      <div class="grid_9">
+        <select labelid="formLabel_State" name="State" id="formElement_State">
+          <option value="AL" selected="selected">AL</option>
+          <option value="AK">AK</option>
+          <option value="AZ">AZ</option>
+          <option value="AR">AR</option>
+          <option value="CA">CA</option>
+          <option value="CO">CO</option>
+          <option value="CT">CT</option>
+          <option value="DE">DE</option>
+          <option value="DC">DC</option>
+          <option value="FL">FL</option>
+          <option value="GA">GA</option>
+          <option value="HI">HI</option>
+          <option value="ID">ID</option>
+          <option value="IL">IL</option>
+          <option value="IN">IN</option>
+          <option value="IA">IA</option>
+          <option value="KS">KS</option>
+          <option value="KY">KY</option>
+          <option value="LA">LA</option>
+          <option value="ME">ME</option>
+          <option value="MD">MD</option>
+          <option value="MA">MA</option>
+          <option value="MI">MI</option>
+          <option value="MN">MN</option>
+          <option value="MS">MS</option>
+          <option value="MO">MO</option>
+          <option value="MT">MT</option>
+          <option value="NE">NE</option>
+          <option value="NV">NV</option>
+          <option value="NH">NH</option>
+          <option value="NJ">NJ</option>
+          <option value="NM">NM</option>
+          <option value="NY">NY</option>
+          <option value="NC">NC</option>
+          <option value="ND">ND</option>
+          <option value="OH">OH</option>
+          <option value="OK">OK</option>
+          <option value="OR">OR</option>
+          <option value="PA">PA</option>
+          <option value="RI">RI</option>
+          <option value="SC">SC</option>
+          <option value="SD">SD</option>
+          <option value="TN">TN</option>
+          <option value="TX">TX</option>
+          <option value="UT">UT</option>
+          <option value="VT">VT</option>
+          <option value="VA">VA</option>
+          <option value="WA">WA</option>
+          <option value="WV">WV</option>
+          <option value="WI">WI</option>
+          <option value="WY">WY</option>
+        </select>
+      </div>
+
+      <div class="grid_1">
+        <input class="btn" type="submit" onclick="return validateForm();" value="Submit">
+      </div>
+      <div class="grid_11"></div>
+    </form>
+
+    <footer class="grid_12">
       <p>Copyright &copy; 2013 Tixers. All rights reserved.</p>
       <p>Photos by <a href="http://cbegeman.blogspot.com" target="_blank">Christian Begeman</a></p>
     </footer>
