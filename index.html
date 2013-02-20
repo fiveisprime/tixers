@@ -38,7 +38,6 @@
         <li data-slide="1">About</li>
         <li data-slide="2">Sell</li>
         <li data-slide="3">Buy</li>
-        <li data-slide="4">Signup</li>
       </ul>
     </nav>
 
@@ -48,19 +47,26 @@
 <div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
   <div class="container clearfix">
 
-    <div class="content grid_12">
+    <div class="content grid_9">
       <h1>Tixers</h1>
       <h2>Tixers is changing the way tickets are exchanged</h2>
-      <p>By trading your tickets to Tixers, we guarantee the value of your ticket
+      <p>
+        By trading your tickets to Tixers, we guarantee the value of your ticket
         and you receive points almost immediately that you can use for other tickets on Tixers.
-        We will even send you suggestions on which games to attend.</p>
-      <p>Tixers will be launching soon, be sure to sign up below to be notified when you can start
-        trading your tickets.</p>
-      <!-- 31x31 social icons once these sites exist <p>
-        <a href="https://twitter.com/tixers" target="_blank"><img src="images/twitter.png"></a>
-        <a href="http://facebook.com/tixers" target="_blank"><img src="images/facebook.png"></a>
-      </p> -->
-      </div>
+        We will even send you suggestions on which games to attend.
+      </p>
+      <p>
+        Tixers will be launching soon, sign up to be notified when you can start trading your tickets.
+      </p>
+    </div>
+    <div class="grid_3 omega">
+      <form id="contact" action="submit.php" method="post">
+        <ul class="errors" style="display:none;"></ul>
+        <p><input name="Name" id="name" placeholder="Name"></p>
+        <p><input name="Email" id="email" placeholder="Email Address"></p>
+        <input class="btn" type="submit" onclick="return validateForm();" value="Submit">
+      </form>
+    </div>
 
   </div>
 </div>
@@ -101,104 +107,8 @@
   </div>
 </div>
 
-<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
+<div class="slide" id="slide4" data-stellar-background-ratio="0.5">
   <div class="container clearfix">
-
-    <div class="content grid_12">
-      <h1>Signup</h1>
-      <h2>Tixers will be launching soon</h2>
-      <p>Signup to be one of the first to know when Tixers goes live.</p>
-      <ul class="errors" style="display:none;"></ul>
-    </div>
-
-    <form id="contact" action="submit.php" method="post">
-
-      <div class="grid_2 alpha">
-        <label for="Name">First Name *</label>
-      </div>
-      <div class="grid_10 omega">
-        <input name="Name" id="name">
-      </div>
-
-      <div class="grid_2 alpha">
-        <label for="Email">Email *</label>
-      </div>
-      <div class="grid_10 omega">
-        <input name="Email" id="email">
-      </div>
-
-      <div class="grid_2 alpha">
-        <label for="City">City</label>
-      </div>
-      <div class="grid_10 omega">
-        <input name="City" id="city">
-      </div>
-
-      <div class="grid_2 alpha">
-        <label for="State">State</label>
-      </div>
-      <div class="grid_10 omega">
-        <select labelid="formLabel_State" name="State" id="formElement_State">
-          <option value="AL" selected="selected">AL</option>
-          <option value="AK">AK</option>
-          <option value="AZ">AZ</option>
-          <option value="AR">AR</option>
-          <option value="CA">CA</option>
-          <option value="CO">CO</option>
-          <option value="CT">CT</option>
-          <option value="DE">DE</option>
-          <option value="DC">DC</option>
-          <option value="FL">FL</option>
-          <option value="GA">GA</option>
-          <option value="HI">HI</option>
-          <option value="ID">ID</option>
-          <option value="IL">IL</option>
-          <option value="IN">IN</option>
-          <option value="IA">IA</option>
-          <option value="KS">KS</option>
-          <option value="KY">KY</option>
-          <option value="LA">LA</option>
-          <option value="ME">ME</option>
-          <option value="MD">MD</option>
-          <option value="MA">MA</option>
-          <option value="MI">MI</option>
-          <option value="MN">MN</option>
-          <option value="MS">MS</option>
-          <option value="MO">MO</option>
-          <option value="MT">MT</option>
-          <option value="NE">NE</option>
-          <option value="NV">NV</option>
-          <option value="NH">NH</option>
-          <option value="NJ">NJ</option>
-          <option value="NM">NM</option>
-          <option value="NY">NY</option>
-          <option value="NC">NC</option>
-          <option value="ND">ND</option>
-          <option value="OH">OH</option>
-          <option value="OK">OK</option>
-          <option value="OR">OR</option>
-          <option value="PA">PA</option>
-          <option value="RI">RI</option>
-          <option value="SC">SC</option>
-          <option value="SD">SD</option>
-          <option value="TN">TN</option>
-          <option value="TX">TX</option>
-          <option value="UT">UT</option>
-          <option value="VT">VT</option>
-          <option value="VA">VA</option>
-          <option value="WA">WA</option>
-          <option value="WV">WV</option>
-          <option value="WI">WI</option>
-          <option value="WY">WY</option>
-        </select>
-      </div>
-
-      <div class="grid_1 alpha">
-        <input class="btn" type="submit" onclick="return validateForm();" value="Submit">
-      </div>
-      <div class="grid_11 omega"></div>
-    </form>
-
     <footer class="grid_12">
       <p>Copyright &copy; 2013 Tixers. All rights reserved.</p>
       <p>
@@ -206,9 +116,9 @@
         photos by <a href="http://cbegeman.blogspot.com" target="_blank">Christian Begeman</a>.
       </p>
     </footer>
-
   </div>
 </div>
+
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-37683983-1']);

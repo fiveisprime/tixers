@@ -54,11 +54,11 @@ var validateForm = function() {
   $errors.hide().empty();
 
   if (!emailTest.test(email)) {
-    err.push($('<li>', { text: 'Please give us a valid email address' }));
+    err.push($('<li>', { text: 'Enter a valid email address' }));
   }
 
   if (name.length === 0) {
-    err.push($('<li>', { text: 'Please give us your name' }));
+    err.push($('<li>', { text: 'Enter your name' }));
   }
 
   for (var i = err.length - 1; i >= 0; i--){

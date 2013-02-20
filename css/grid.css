@@ -38,7 +38,7 @@
 }
 
 .container {
-  width: 90%; /*width: 1000px;*/
+  width: 90%;
   max-width: 1000px;
   margin: auto;
 
@@ -50,7 +50,7 @@
   overflow: hidden;
   visibility: hidden;
   width: 0;
-  height: 0
+  height: 0;
 }
 .clearfix:after {
   clear: both;
@@ -60,11 +60,11 @@
   line-height: 0;
   visibility: hidden;
   width: 0;
-  height: 0
+  height: 0;
 }
 * html .clearfix,
 *:first-child+html .clearfix {
-  zoom: 1
+  zoom: 1;
 }
 
 /* Mobile */

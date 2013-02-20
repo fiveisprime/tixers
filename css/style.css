@@ -7,12 +7,13 @@ input {
   font-size: 1em;
   color: #353535;
   background-color: #ffffff;
+  border: 1px #c5c5c5 solid;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
 }
 input {
-  border: 1px #c5c5c5 solid;
-  -webkit-border-radius: 5px;
-     -moz-border-radius: 5px;
-          border-radius: 5px;
+
 }
 input:hover,
 input:active {
@@ -62,7 +63,7 @@ nav[role=navigation] {
 }
 .navigation li {
   float: left;
-  padding:0 0 0 50px;
+  padding: 0 0 0 50px;
 }
 .navigation li:hover {
   cursor: pointer;
@@ -93,7 +94,7 @@ nav[role=navigation] {
   color: #515151;
   font-size: 15px;
   font-weight: bold;
-  padding: 6px 24px;
+  padding: 5px 15px;
   text-decoration: none;
   text-shadow: 1px 1px 0 #ffffff;
 }
@@ -233,20 +234,20 @@ nav[role=navigation] {
     float: none;
     list-style: none;
     margin: 0;
-    padding:0;
+    padding: 0;
   }
 
   .navigation li {
     float: left;
-    width:25%;
-    padding:0;
+    width: 32%;
+    padding: 0;
   }
 
   .slide {
     background-attachment: fixed;
-    width:100%;
+    width: 100%;
     position: relative;
-    padding:150px 0;
+    padding: 150px 0;
   }
 
   .decorative {
@@ -254,8 +255,8 @@ nav[role=navigation] {
   }
 
   .content {
-    text-align:center;
-    width:100%;
+    text-align: center;
+    width: 100%;
   }
 
   #slide1 h1 {
@@ -293,8 +294,8 @@ nav[role=navigation] {
   }
 
   nav[role=navigation] {
-    width:100%;
-    margin:5px 0;
+    width: 100%;
+    margin: 5px 0;
   }
 
   .navigation {
@@ -302,19 +303,19 @@ nav[role=navigation] {
     float: left;
     list-style: none;
     margin: 0;
-    padding:0;
+    padding: 0;
   }
 
   .navigation li {
     float: left;
-    width:25%;
+    width: 32%;
   }
 
   .slide {
     background-attachment: fixed;
-    width:100%;
+    width: 100%;
     position: relative;
-    padding:150px 0;
+    padding: 150px 0;
   }
 
   #slide1 h1 {
