@@ -1,4 +1,5 @@
 <?php
+
   $url = 'http://eventargs.com/tixers';
   $destination = 'fiveisprime@me.com';
 
@@ -14,4 +15,5 @@
 
   header('Location: ' . $url);
   exit;
+
 ?>
