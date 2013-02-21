@@ -12,9 +12,6 @@ input {
      -moz-border-radius: 3px;
           border-radius: 3px;
 }
-input {
-
-}
 input:hover,
 input:active {
   border: 1px #a99f9a solid;
@@ -157,7 +154,7 @@ nav[role=navigation] {
   font-weight: 400;
 }
 
-/* Slide 2 */
+/* Slide 2 and 4 */
 
 #slide2,
 #slide4 {
