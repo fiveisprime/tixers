@@ -10,6 +10,7 @@ jQuery(document).ready(function ($) {
   slide.waypoint(function(event, direction) {
     var dataslide = $(this).attr('data-slide');
 
+    // Update the navigation links based on where the document is moving.
     if (direction === 'down') {
       $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active');
     }
@@ -19,9 +20,12 @@ jQuery(document).ready(function ($) {
   });
 
   mywindow.scroll(function () {
+    // Anytime the windows is at the top, ensure that the first menu item
+    // is the active one.
     if (mywindow.scrollTop() === 0) {
       $('.navigation li[data-slide="1"]').addClass('active');
       $('.navigation li[data-slide="2"]').removeClass('active');
+      $('.navigation li[data-slide="3"]').removeClass('active');
     }
   });
 
@@ -44,6 +48,11 @@ jQuery(document).ready(function ($) {
   });
 });
 
+/**
+ * Validate the sign up form and logs errors out to an unordered
+ * list directly above the form.
+ */
+
 var validateForm = function() {
   var emailTest = /\S+@\S+\.\S+/
     , email     = $('#email').val()
@@ -61,7 +70,7 @@ var validateForm = function() {
     err.push($('<li>', { text: 'Enter your name' }));
   }
 
-  for (var i = err.length - 1; i >= 0; i--){
+  for (var i = err.length - 1; i >= 0; i--) {
     $errors.append(err[i]);
   }
 
