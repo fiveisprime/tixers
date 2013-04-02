@@ -1,5 +1,7 @@
 jQuery(document).ready(function ($) {
-  $(window).stellar();
+  $(window).stellar({ 
+    horizontalScrolling: false
+  });
 
   var links = $('.navigation').find('li')
     , slide = $('.slide')
